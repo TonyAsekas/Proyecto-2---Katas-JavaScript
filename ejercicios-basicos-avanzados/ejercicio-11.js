@@ -1,4 +1,5 @@
-/*Calcular promedio mezclado: Crea una función que reciba por parámetro un array y cuando es un valor number lo sume y de lo contrario cuente la longitud del string y lo sume.
+/*Calcular promedio mezclado: Crea una función que reciba por parámetro un array 
+y cuando es un valor number lo sume y de lo contrario cuente la longitud del string y lo sume.
 
 Es un poco locura, pero podremos ejercitar nuestra lógica con este ejercicio.
 
@@ -17,5 +18,15 @@ const mixedElements = [
   "Hola mundo",
 ];
 function averageWord(list) {
-  
+ let sumaTotal = 0
+ for (const element of list) {
+    if(typeof element === "number"){
+        sumaTotal += element
+    }else{
+        sumaTotal += element.length
+
+    }
+ } 
+ return sumaTotal / list.length
 }
+console.log(averageWord(mixedElements))
