@@ -45,9 +45,9 @@ console.log("El precio total de los dos sables es: "+sumaTotal)
 /*4. Actualizando el precio final de las naves:
 
 Modifica el valor de la variable global precioBaseGlobal a 25.000 créditos.
-Actualiza el precio final (precioFinal) de dos naves ("Ala-X" y "Halcón Milenario") sumando el valor de precioBaseGlobal a su precio base (precioBase).
+Actualiza el precio final (precioFinal) de dos naves ("Ala-X" y "Halcón Milenario") sumando el valor de precioBaseGlobal a su precio base (precioBase).*/
 let precioBaseGlobal = 10000;
-
+/*
  Cambia el precio base en esta linea modificando la variable
 */
 const nave1 = {nombre: "Ala-X", precioBase: 50000, precioFinal: 60000};
@@ -55,3 +55,10 @@ const nave2 = {nombre: "Halcón Milenario", precioBase: 70000, precioFinal: 8000
 /*
  Tu código para actualizar el precio final de cada nave aquí...
 */
+precioBaseGlobal = 25000
+console.log(precioBaseGlobal)
+
+nave1.precioFinal = nave1.precioBase + precioBaseGlobal
+nave2.precioFinal = nave2.precioBase + precioBaseGlobal
+console.log(nave1)
+console.log(nave2)
