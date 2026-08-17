@@ -1,4 +1,5 @@
-/*Utiliza un bucle para filtrar personajes de Star Wars por la especie "Human" y guárdalos en un nuevo array llamado humanCharacters.
+/*Utiliza un bucle para filtrar personajes de Star Wars por la especie "Human"
+ y guárdalos en un nuevo array llamado humanCharacters.
 
 Imprime este nuevo array por consola.*/
 
@@ -14,5 +15,9 @@ const characters = [
   { name: 'Han Solo', species: 'Human' }
 ];
 const humanCharacters = [];
-
-// Añade tu código de bucle aquí
+for (const character of characters) {
+    if(character.species==='Human')
+        humanCharacters.push(character)
+    
+}
+console.log(humanCharacters)
